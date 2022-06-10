@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="continer">
+        <h1>image Gallery</h1>
+
+        <section id="gallery">
+            <img src="./pexels-aleksandar-pasaric-1164675.jpg" alt="">
+            <img src="./pexels-aleksandar-pasaric-1820770.jpg" alt="">
+            <img src="./pexels-mikechie-esparagoza-1678997.jpg" alt="">
+            </section>
+            <button class="btn nextBtn" onclick="img_move()">다음 이미지</button>
+
+    </div>
+
+    <script>
+        function img_move() {
+            $('#gallery img:first').appendTo('#gallery');
+        }
+
+
+        $(function () {
+            // //nextBtn누르면 1번이미지가 뒤로감
+            // $('.nextBtn').click(function(){
+            // // $('#gallery img:first').appendTo('#gallery');
+            // img_move();
+            // });
+
+
+        });
+    </script>
+
+    <!-- #향후 업그레이드 
+        next ,prev 버튼으로 이미지전환하기    
+    -->
+
+
+</body>
+
+</html>
